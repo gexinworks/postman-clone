@@ -3,13 +3,14 @@ import {Layout} from 'antd';
 import './App.less';
 import LeftNavComponent from './components/leftnav';
 import MainContentComponent from './components/maincontent';
+import HeaderComponent from './components/header';
 
 const {Header,Footer} = Layout;
 
 function App() {
   return (
     <Layout>
-      <Header style={{height:50,background:'#CCCCCC'}}></Header>
+      <HeaderComponent />
       <Layout style={{position:'absolute',top:50,left:0,right:0,bottom:36}} >
         <LeftNavComponent />
         <MainContentComponent />
